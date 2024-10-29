@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AreaCirculo
 {
@@ -10,7 +6,15 @@ namespace AreaCirculo
     {
         static void Main(string[] args)
         {
+           const double pi = Math.PI;
+            Console.WriteLine("Introduza o raio: ");
+            double raio1 = double.Parse(Console.ReadLine());
 
+            double area = pi * (raio1 * raio1);
+
+            Console.WriteLine("A área do círculo é: {0:F4} ", area);
+
+            Console.ReadKey();
         }
     }
 }
